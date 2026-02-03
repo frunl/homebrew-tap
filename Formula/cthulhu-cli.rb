@@ -5,20 +5,20 @@
 class CthulhuCli < Formula
   desc "CLI for running agentic workflows in your repository"
   homepage "https://github.com/frunl/cthulhu"
-  version "0.3.1"
+  version "0.3.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/frunl/cthulhu/releases/download/v0.3.1/cthulhu_0.3.1_darwin_amd64.tar.gz"
-      sha256 "482e69c1781341029eb85759c95212b63684c5827e4371d4fbf2cea9f20ced16"
+      url "https://github.com/frunl/cthulhu/releases/download/v0.3.6/cthulhu_0.3.6_darwin_amd64.tar.gz"
+      sha256 "44c578a220866fa63e1b9b8d8de6a1bb40d19ea42161e29c667df787d1715b6b"
 
       def install
         bin.install "cthulhu"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/frunl/cthulhu/releases/download/v0.3.1/cthulhu_0.3.1_darwin_arm64.tar.gz"
-      sha256 "50ee11d1867605938df72b917794901c0c82bd10d7c6a0ff2b6cd023aa866e09"
+      url "https://github.com/frunl/cthulhu/releases/download/v0.3.6/cthulhu_0.3.6_darwin_arm64.tar.gz"
+      sha256 "b8d2e681b4bd4bb3b0407bc4282c4cd370ba825b9aada1ea8a6a78db0f299bb2"
 
       def install
         bin.install "cthulhu"
@@ -28,15 +28,15 @@ class CthulhuCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frunl/cthulhu/releases/download/v0.3.1/cthulhu_0.3.1_linux_amd64.tar.gz"
-      sha256 "587906019763750fdcde692abbcddef9ca1d0d13b4e68f8ef1407c35f1d5d229"
+      url "https://github.com/frunl/cthulhu/releases/download/v0.3.6/cthulhu_0.3.6_linux_amd64.tar.gz"
+      sha256 "0481df97ae9291206d38f184b9f32c1a0452606be86a62db0c6ed351dd68c269"
       def install
         bin.install "cthulhu"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frunl/cthulhu/releases/download/v0.3.1/cthulhu_0.3.1_linux_arm64.tar.gz"
-      sha256 "26a3d65d9ac2e20d40935ed249a9bffc7019401cb79cb28bb1e8e8c444cf2cad"
+      url "https://github.com/frunl/cthulhu/releases/download/v0.3.6/cthulhu_0.3.6_linux_arm64.tar.gz"
+      sha256 "f1d73cb11ad8321dd511c40666416fe50b698188b1cb5f8ab77d71697d8257f4"
       def install
         bin.install "cthulhu"
       end
