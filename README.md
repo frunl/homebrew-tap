@@ -7,4 +7,5 @@ This is the Homebrew tap for `cthulhu-cli`.
 ```sh
 brew tap frunl/homebrew-tap
 brew install cthulhu-cli
+brew install frunl-cli
 ```
