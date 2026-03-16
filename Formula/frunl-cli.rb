@@ -5,20 +5,20 @@
 class FrunlCli < Formula
   desc "CLI for running agentic workflows in your repository"
   homepage "https://github.com/frunl/frunl-cli"
-  version "0.10.0"
+  version "0.11.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/frunl/frunl-cli/releases/download/v0.10.0/frunl_0.10.0_darwin_amd64.tar.gz"
-      sha256 "d94a2818e30b2354b696c194f0c5eee2fe061d5defe8c371b332b9ec614cb94a"
+      url "https://github.com/frunl/frunl-cli/releases/download/v0.11.0/frunl_0.11.0_darwin_amd64.tar.gz"
+      sha256 "273047933c5057085af791ebe1c87129107c117f9f9e05f703c935f843e93196"
 
       define_method(:install) do
         bin.install "frunl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/frunl/frunl-cli/releases/download/v0.10.0/frunl_0.10.0_darwin_arm64.tar.gz"
-      sha256 "b2da38629c55b6ca968349099effeda400f094dbab07b51b9d5807188cbd58f0"
+      url "https://github.com/frunl/frunl-cli/releases/download/v0.11.0/frunl_0.11.0_darwin_arm64.tar.gz"
+      sha256 "2dae9bcd7cd63223d8123e9b5f27a314e4ba6d16ac731c766a79c0b93dbe3e3d"
 
       define_method(:install) do
         bin.install "frunl"
@@ -28,15 +28,15 @@ class FrunlCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frunl/frunl-cli/releases/download/v0.10.0/frunl_0.10.0_linux_amd64.tar.gz"
-      sha256 "3ac90eb142e4879e71698cd230fa81f54fe94f30e8544ff97caf7dfa8f28cdc0"
+      url "https://github.com/frunl/frunl-cli/releases/download/v0.11.0/frunl_0.11.0_linux_amd64.tar.gz"
+      sha256 "14a21a526f723949afa63fff49976d3a41a954f8abcbf2599759f9004d3e2ce8"
       define_method(:install) do
         bin.install "frunl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frunl/frunl-cli/releases/download/v0.10.0/frunl_0.10.0_linux_arm64.tar.gz"
-      sha256 "342c8e9177eb9d9d990929c57e174b158dc481a0a48795075711320a56a5e6de"
+      url "https://github.com/frunl/frunl-cli/releases/download/v0.11.0/frunl_0.11.0_linux_arm64.tar.gz"
+      sha256 "32ea56b0f395e2cacac13888529a4b50e034145b9267122d72ff7a22b9de4d1c"
       define_method(:install) do
         bin.install "frunl"
       end
